@@ -140,17 +140,32 @@
   left: 0;
   bottom: 0;
   font-size: 20px;
-  color: red;
   background-color: white;
   width: 72px;
+  z-index: 101;
 }
 
 .sidebar-link {
-  height: 76px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .sidebar-link:hover {
-  background-color: lightgray;
+  background-color: rgb(229, 227, 227);
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar div {
+  font: Roboto, Arial;
+  font-size: 10px;
 }
 
 /*  ------- body  -------- */
@@ -163,7 +178,9 @@ p {
 body {
   margin: 0;
   padding-top: 80px;
-  padding-left: 72px;
+  padding-left: 82px;
+  padding-right: 24px;
+  background-color: rgb(252, 246, 246);
 }
 
 /*  -------  video ------ */
@@ -185,7 +202,7 @@ body {
 }
 
 .profile-picture {
-  width: 40px;
+  width: 35px;
   border-radius: 50px;
 }
 
