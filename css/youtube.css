@@ -69,6 +69,27 @@
   border-color: rgb(192, 192, 192);
   margin-left: -1px;
   margin-right: 10px;
+  position: relative;
+}
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
 }
 
 .search-icon {
@@ -82,6 +103,28 @@
   border-radius: 20px;
   border: none;
   background-color: rgb(245, 245, 245);
+  position: relative;
+}
+
+.voice-search-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  white-space: nowrap;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 5px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.voice-search-button:hover .tooltip {
+  opacity: 1;
 }
 
 .voice-search-icon {
@@ -193,7 +236,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .video-info-grid {
@@ -207,7 +250,7 @@ body {
 }
 
 .thumbnail-row {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
 }
 
