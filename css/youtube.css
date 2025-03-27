@@ -97,7 +97,7 @@
   border-radius: 2px;
   font-size: 12px;
   bottom: -50px;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.15s;
   pointer-events: none;
 }
